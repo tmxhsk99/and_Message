@@ -42,8 +42,8 @@ public class Main extends AppCompatActivity {
             }
             @JavascriptInterface
             public void sendMessage(String msg){
-                    temp=msg;
-                Toast.makeText(ctx,"입력된 메시지"+temp,Toast.LENGTH_LONG).show();
+                temp=msg;
+                Toast.makeText(ctx,"입력된 메시지"+temp+"",Toast.LENGTH_LONG).show();
                 Log.d("입력된 메시지",temp);
             }
         },"Hybrid");

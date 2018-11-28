@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+
+    <h1>헬로우 하이브리드 !</h1>
+    <p>테스트 화면</p>
+    <button onclick="javascript:showToast('Hello World')">
+        토스트 테스트
+    </button>
+    <input type="text" id="inputMsg" placeholder="메세지 입력"/>
+    <button onclick="javascript:sendMessage()" type="button">
+        메세지 전송
+    </button>
+
+    <script>
+        function showToast(msg){
+            Hybrid.showToast(msg);
+        }
+        function senMessage(){
+            var msg = document.getElementById('inputMsg').value;
+            Hybrid.sendMessage(msg);
+        }
+    </script>
+</body>
+</html>
